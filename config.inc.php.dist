@@ -1,0 +1,23 @@
+<?php
+
+// uncomment the following line to enable debugging
+//$config['ppolicy_debug'] = true;
+
+// ldap uri
+$config['ppolicy_ldap_uri'] = 'ldaps://ldap.example.domain/ ldap://ldap2.example.domain';
+
+// LDAP base DN
+$config['ppolicy_basedn'] = 'dc=pbs,dc=corp';
+// DN of the password policies container 
+$config['ppolicy_policies_basedn'] = 'ou=policies,dc=example,dc=domain';
+// Bind user DN
+$config['ppolicy_binddn'] = 'cn=some_user,dc=example,dc=domain';
+// Bind user password
+$config['ppolicy_bindpw'] = 'secret_pass';
+// CA certificate
+$config['ppolicy_cafile'] = '/usr/local/share/ca-certificates/some.cacert.crt';
+// Default policy DN
+$config['ppolicy_default_policy'] = 'cn=default,ou=policies,dc=example,dc=domain';
+
+
+?>
